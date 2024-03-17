@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-* {
-  border: 1px solid red;
-}
 
 body {
   font-family: 'Fira Sans', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
