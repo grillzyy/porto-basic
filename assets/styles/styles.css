@@ -1,0 +1,296 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  border: 1px solid red;
+}
+
+body {
+  font-family: 'Fira Sans', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: fit-content;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  width: 100%;
+  max-width: 75%;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+header.navbar-container .logo img {
+  width: 100px;
+  justify-self: flex-start;
+  padding-left: 2rem;
+}
+
+header.navbar-container .navbar-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+  padding-right: 2rem;
+}
+
+header.navbar-container .navbar-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .navbar-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px 100px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #2d3e50;
+}
+
+header.navbar-container .navbar-list li:hover a {
+  background-color: #2d3e50;
+  color: white;
+}
+
+main {
+  flex: 3;
+  width: 100%;
+  max-width: 75%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+main .content-beranda {
+  display: flex;
+  align-items: center;
+}
+
+
+main .content-beranda .content-beranda-desc .title {
+  margin-block: 1rem;
+  font-size: 3rem;
+}
+
+main .content-beranda .content-beranda-desc .welcome {
+  margin-block: 1rem;
+  font-size: 1.5rem;
+  color: orangered;
+}
+
+main .content-beranda .content-beranda-desc p {
+  font-size: 1.2rem;
+}
+
+main .content-beranda .content-beranda-desc button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 25px 100px;
+  margin-block-start: 1rem;
+  background-color: #2d3e50;
+  font-family: 'Fira Sans', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+main .content-beranda .content-beranda-desc button:hover {
+  border: 2px solid #2d3e50;
+  background-color: transparent;
+  color: #2d3e50;
+}
+
+main .content-beranda .content-beranda-img {
+  flex: 0.5;
+  display: flex;
+}
+
+main .content-beranda .content-beranda-img img {
+  width: 300px;
+  min-width: 250px;
+  margin: auto;
+  border-radius: 25px 100px
+}
+
+main .content-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main .content-about .title {
+  margin-block: 1rem;
+  font-size: 2rem; 
+}
+
+main .card-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem 5rem;
+}
+
+main .card-grid .card {
+  text-align: center;
+  border: 2px solid #2d3e50;
+  border-radius: 15px 15px;
+  flex-wrap: wrap;
+  flex: 1;
+  padding-top: 2rem;
+}
+
+.card i {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+main .card-grid .card:hover {
+  background-color: #2d3e50;
+  color: white;
+}
+
+main .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main .social .social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+main .social .social-media ul {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main .social .social-media li {
+  list-style-type: none;
+}
+
+main .social .social-media li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #2d3e50;
+}
+
+main .social .social-media li a:hover {
+  color: #7f95ad;
+}
+
+.profile {
+  background-color: white;
+  border: 1px solid #2d3e50;
+  border-radius: 25px 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.profile header p {
+  font-size: 1.2rem;
+  color: #2d3e50;
+}
+
+.profile header figure {
+  text-align: center;
+}
+
+.profile header img {
+  width: 120px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.profile section h3 {
+  font-size: 1.3rem;
+}
+
+.profile table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile th, .profile td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.profile th {
+  background-color: #7f95ad;
+  color: white;
+}
+
+.copyright {
+  flex: 1;
+  width: 100%;
+  max-width: 75%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .navbar-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main .content-beranda {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+  
+  main .content-beranda .content-beranda-img{
+    order: -1;
+  }
+
+  main .card-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .card-grid .card {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+
