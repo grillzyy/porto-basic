@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* border: 1px solid red !important; */
 }
 
 
@@ -290,4 +291,15 @@ main .social .social-media li a:hover {
   }
 }
 
+main .content-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+main .content-project .title {
+  margin-block: 1rem;
+  font-size: 2rem; 
+}
